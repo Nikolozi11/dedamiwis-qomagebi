@@ -1,5 +1,10 @@
 body {
     background-color: aquamarine;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-attachment: fixed;
 }
 
 .ban {
@@ -10,6 +15,22 @@ body {
 .sem {
   width: 50%;
   height: 90%;
+}
+
+.textbac {
+  margin: auto;
+  background-color: rgba(228, 216, 216, 0.524);
+  width: 80%;
+  height: 70%;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: red;
+  font-size: 20px;
 }
 
 * {
