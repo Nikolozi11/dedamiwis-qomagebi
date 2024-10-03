@@ -3,8 +3,13 @@ body {
 }
 
 .ban {
-    width: 1500px;
-    height: 500px;
+    width: 95%;
+    height: 90%;
+}
+
+.sem {
+  width: 50%;
+  height: 90%;
 }
 
 * {
@@ -72,3 +77,25 @@ body {
     margin-top: 20px;
   }
   
+
+  /*zoma telefoni*/
+@media (max-width: 915px) {
+  nav {
+    margin-top: -780px;
+    height: 100vh;
+  }
+
+  ul {
+    display: block;
+  }
+
+ .ch {
+  visibility: visible;
+ }
+
+ .ms {
+  visibility: visible;
+ }
+
+}
+
