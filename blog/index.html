@@ -26,164 +26,21 @@
         <a href="../gegma/index.html"><li>სამოქმედო გეგმა</li></a>
     </ul>
 </nav>
-
-
-
-<title>პოსტების ატვირთვა</title>
-  <style>
-    /* ბექგრაუნდი და ზოგადი სტილები */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-    }
-    .post {
-      background-color: #fff;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .post img {
-      max-width: 100%;
-      height: auto;
-    }
-    /* ფორმის სტილები */
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: none; /* ფორმა იმალება იმ დროისთვის, სანამ კოდი არ იქნება სწორი */
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-    form button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #555;
-    }
-    /* ღილაკის სტილები */
-    #showFormButton {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    #showFormButton:hover {
-      background-color: #45a049;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>პოსტების ატვირთვა</h1>
-  </header>
-
-  <div class="container">
-    <!-- ღილაკი, რომელიც ანიჭებს პაროლის მოთხოვნას -->
-    <button id="showFormButton">ატვირთვის ფორმის ნახვა</button>
-
-    <!-- ფორმა ატვირთვისთვის -->
-    <form id="uploadForm" enctype="multipart/form-data">
-      <input type="text" id="title" name="title" placeholder="პოსტის სათაური" required>
-      <textarea id="content" name="content" placeholder="პოსტის აღწერა" required></textarea>
-      <input type="file" id="image" name="image">
-      <button type="submit">ატვირთვა</button>
-    </form>
-
-    <!-- პოსტების ჩვენება -->
-    <center><div id="posts-container"></div></center>
-  </div>
-
-  <script>
-    const correctCode = "eko123";  // შეცვალეთ თქვენი კოდი აქ
-
-    document.getElementById('showFormButton').addEventListener('click', function() {
-      // პაროლის შემოწმება
-      const password = prompt('გთხოვთ, შეყაროთ პაროლი:');
-      if (password === correctCode) {
-        // თუ პაროლი სწორია, ჩვენება ფორმა
-        document.getElementById('uploadForm').style.display = 'block';
-        alert('პაროლი სწორია, შეგიძლიათ ატვირთოთ პოსტები!');
-      } else {
-        alert('პაროლი არასწორია!');
-      }
-    });
-
-    // პოსტების ატვირთვა სერვერზე
-    document.getElementById('uploadForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // ფორმის წარუმატებლობის თავიდან ასაცილებლად
-
-      const formData = new FormData();
-      formData.append('title', document.getElementById('title').value);
-      formData.append('content', document.getElementById('content').value);
-      formData.append('image', document.getElementById('image').files[0]);
-
-      // POST მოთხოვნა სერვერზე
-      fetch('http://localhost:3000/upload', {
-        method: 'POST',
-        body: formData,
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-        loadPosts(); // პოსტების გადმოწერა და ჩვენება
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-    });
-
-    // პოსტების ჩამოტვირთვა და ჩვენება
-function loadPosts() {
-  fetch('http://localhost:3000/posts')
-    .then(response => response.json())
-    .then(data => {
-      const postsContainer = document.getElementById('posts-container');
-      postsContainer.innerHTML = ''; // ვაშლით პოსტების კონტეინერი
-
-      // ციკლი პოსტების განთავსებისთვის, დალაგება უკანასკნელი პირველი
-      data.reverse().forEach(post => {
-        const postElement = document.createElement('div');
-        postElement.classList.add('post');
-        postElement.innerHTML = `
-          <h3>${post.title}</h3>
-          <p>${post.content}</p>
-          ${post.image ? `<img src="uploads/${post.image}" alt="${post.title}">` : ''}
-        `;
-        postsContainer.appendChild(postElement);
-      });
-    })
-    .catch(error => console.error('Error fetching posts:', error));
-}
-
-    // საიტის გაშვებისას ჩამოტვირთეთ პოსტები
-    loadPosts();
-  </script>
-</body>
-</html>
+<br>
+<br>
+<br>
+<br>
+<center><h3>ეკო კლუბმა დადამიწის ქომაგებმა პირველი შეხვედრა ჩაატარა</h3></center>
+<div class="blog">
+    <br>
+    <br>
+    <center><h5>ჩვენმა  ეკო კლუბმაა "დედამიწის ქომაგები"  ნოემბრიდან დაიწყო ამ სასწავლი წლის შეხვედრები. პირველ შეხვედრაზე კლუბის  წევრებს ხელმძღვანელმა გააცნო სამომავლო მიზნები და შესაძლებლობები. კლუბის შედვედრაზე გავიხსენეთ წინა წლის საინტერესო და დასამახსოვრებელი აქტივობები. ჩვენი კლუბის წევრმა ნიკოლოზ გასვიანმა თანაგუნდელებს  წარუდგინა სოც. ქსელის გვერდი და ჩვენი კლუბის საიტი. ასევე ქრისტი კობახიძემ შექმნა  კლუბის ლოგოს  ციფრული ვერსია. 
+        შეხვედრაზე წევრებმა წარმოადგინეს  იდები სამოქმედო გეგმასთან დაკავშირებით და მომავალ შეხვედრაზე მზად გვექნება ის გეგმა, რომლის მიხედვითაც ვიმუშავებთ ამ სასწავლო წელს. 
+       #საინტერესოდღეებიიწყებაჩვენთან</h5></center>
+       <br>
+       <br>
+       <br>
+       <center><img class="blogm" src="../img/3ab74f68-a567-483b-bf1c-b7329980a2a1 (1).jpeg"></center>
+</div>
 </body>
 </html>
