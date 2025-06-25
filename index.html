@@ -1,84 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <script src="fungtion.js" defer ></script>
+    <script src="./baner.js" defer></script>
+    <script src="./function.js" defer></script>
     <link rel="stylesheet" href="disain.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="./img/logo.png">
+    <link rel="shortcut icon" type="x-icon" href="./img/green1-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>დედამიწის ქომაგები</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- ბუშტები -->
-    <div id="balloons"></div>
-    
-    <!-- იუბილეს ტექსტი -->
-    <div id="anniversaryText">🎂კლუბი დედამიწის ქომაგები 10 წლისაა!🎂</div>
-    
-    <!-- ტორტი -->
-    <div class="cake" id="cake"><img class="cake1" src="img/DALL_E_2025-04-04_22.35.13_-_A_grand__multi-tiered_birthday_cake_designed_in_animation_style__using_neutral_and_warm_tones_without_any_pink._Colors_include_soft_peach__cream__past-removebg-preview.png"></div>
-    
-    
+    <header>
+        <!--nav-->
+        <nav>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./img/green1-logo.png" alt="დედამიწის ქომაგების ლოგო" />
+                </div>
+            </a>
 
 
-   <!--nav board-->
-  
-   <div class="burger" id="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-</div>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
-<header>
-    <nav>
-        <div class="logo"><img class="log" src="./img/logo.png"></div> <!-- შეგიძლიათ აქ ჩასვათ თქვენი ლოგო ან ბრენდის სახელი -->
-        <ul class="nav-links" id="navLinks">
-            <li class="submenu-parent">
-                <li><a href="./index.html">მთავარი</a></li>
-            <li class="submenu-parent">
-                <a href="./vin vart/index.html">ვინ ვართ</a></li>
-               
-                <li class="submenu-parent">
-                    <a href="./blog/index.html">ბლოგი</a></li>
+            <div class="nav-links" id="navLinks">
+                <a href="./index.html" class="link">მთავარი</a>
+                <a href="./gverdebi/vinvart.html" class="link">ჩვენს შესახებ</a>
+                <a href="./gverdebi/gazeti.html" class="link">გაზეთი</a>
+                <a href="./gverdebi/gegma.html" class="link">სამოქმედო გეგმა</a>
+                <a href="./gverdebi/aqtivoba.html" class="link">აქტივობები</a>
+                <a href="https://docs.google.com/forms/d/1O_WNAPv-fvRoFVty1GkeQlzXeoQhNZ0XkdCg9X5jY4g/edit" class="btn"
+                    target="_blank">რეგისტრაცია</a>
+            </div>
+        </nav>
 
-                    <li class="submenu-parent">
-                        <a href="./gazeti/index.html">გაზეთი</a></li>
-                   
-                    <li class="submenu-parent">
-                        <a href="./gegma/index.html">სამოქმედო გეგმა</a></li>
-                       
+        <!--baner-->
+        <div class="slider-area">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('./img/10weligavida.jpg')">
+                        <div class="slider-content">
+                            <h1>10 წელი დედამიწის <br> სადარაჯოზე</h1>
+                            <p>კლუბი უკვე 10 წელია ზრუნავს გარემოზე.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url('./img/baner.jpg')">
+                        <div class="slider-content">
+                            <h1>დატოვე შენი <br> ეკოლოგიური ნაკვალევი</h1>
+                            <p>გაუფრთხილდი გარემოს ჩვენთანერთად და დატოვე შენი ნაკვალევი.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url('./img/gamofena.jpeg')">
+                        <div class="slider-content">
+                            <h1>უამრავი აქტივობა</h1>
+                            <p>კლუბი უამრავ მნიშვნელოვან აქტივობას ახორციელებს.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url('./img/pikniki.jpeg')">
+                        <div class="slider-content">
+                            <h1>შემოგვიერთდი დღესვე</h1>
+                            <p>გახდი ჩვენი კლუბის აქტიური წევრი და გაუფრთხილდი გარემოს.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--video-->
+    <section class="eco-video-section">
+        <div class="video-wrapper">
+            <video id="ecoVideo" class="eco-video-bg">
+                <source src="./video/lumi.mp4" type="video/mp4" />
+                შენი ბრაუზერი არ უჭერს მხარს ვიდეოს
+            </video>
+
+            <div id="ecoContent" class="eco-video-content">
+                <h2>ენერგო ეფექტურობა</h2>
+                <p>ამასთან დაკავშირებით იხილეთ ვიდეო</p>
+                <button id="playVideoBtn" class="eco-btn">▶️ ვიდეოს ჩართვა</button>
+            </div>
+
+            <button id="muteBtn" class="eco-btn mute-btn" style="display: none;">🔇 გამორთე ხმა</button>
+        </div>
+    </section>
+
+    <!--siaxle-->
+    <article>
+        <div class="news-container">
+            <div class="news-title">სიახლეები</div>
+
+            <div class="news-item">
+                <h3>გვერდის დიზაინი განახლდა</h3>
+                <p>სრულიად განახლდა ვებგვერდი შეიცვალა დიზაინი და ლოგო მომხმარებელს უფრო მეტი შესაძლებლობა ექნება რომ
+                    თვალი ადავნოს ეკო კლუბს.</p>
+                <div class="news-date">25 ივნისი, 2025</div>
+            </div>
+        </div>
+    </article>
+
+    <!--footer-->
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61566450675759&locale=ka_GE" class="facebook"
+                    target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+            <li><a href="#" target="_blank" class="instagram"><i class="fab fa-instagram icon"></i></a></li>
+            <li><a href="#" target="_blank" class="youtube"><i class="fab fa-youtube icon"></i></a></li>
         </ul>
-    </nav>
-</header>
+    </footer>
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
-
-    <br>
-    <center><img class="ban" src="img/baner.jpg"></center>
-    <br>
-    <br>
-    
-    <!-- მუსიკა -->
-    <audio class="myAudio" id="myAudio" src="./audio/happy-birthday-323162.mp3" controls></audio>
-    
-    <center><video class="v1" src="video/lumi.mp4" controls autoplay loop ></video></center>
-    <br>
-    <br>
-    
-    
-    
-    <center><a href="https://docs.google.com/forms/d/1O_WNAPv-fvRoFVty1GkeQlzXeoQhNZ0XkdCg9X5jY4g/edit" target="_blank"><img class="sem" src="img/register.jpeg"></a></center>
-
-    <div class="gati"></div>
-
+    <script src="./nav.js"></script>
 </body>
+
 </html>

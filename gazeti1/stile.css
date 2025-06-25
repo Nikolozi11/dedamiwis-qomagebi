@@ -1,0 +1,566 @@
+body {
+    background-color: aquamarine;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+.ban {
+    width: 95%;
+    height: 90%;
+}
+
+.sem {
+  width: 50%;
+  height: 90%;
+}
+
+.blog {
+  background-color: rgba(255, 255, 255, 0.642);
+}
+
+.blogm {
+  width: 90%;
+}
+
+.textbac {
+  margin: auto;
+  background-color: rgba(228, 216, 216, 0.524);
+  width: 80%;
+  height: 70%;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: red;
+  font-size: 20px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.baner {
+  margin-top: 10px;
+  width: 98%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #280b6c;
+}
+
+.log {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  position: relative; /* სუბმენიუსთვის */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+
+
+.mtav:hover {
+    background-color: red;
+}
+
+.submenu-parent:hover {
+    background-color: #280b6c;
+}
+
+
+.nav-links li {
+  margin-left: 20px;
+  position: relative; /* სუბმენიუსთვის */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+/* Submenu სტილები */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #280b6c;
+  list-style: none;
+  padding: 10px;
+  width: 150px;
+  z-index: 100;
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.submenu-parent:hover .submenu {
+  display: block; /* Hover-ზე გამოჩნდეს ქვე მენიუ */
+}
+
+
+
+#commentInput {
+  color: white; /* თეთრი ტექსტი */
+  background-color: #280b6c; /* ფონური ფერი (შავი) */
+  border: 1px solid white; /* თეთრი საზღვარი */
+  padding: 10px; /* შიდა სივრცე */
+}
+
+.xl {
+  width: 30%;
+  color: white;
+  background-color: green;
+}
+
+.xl:hover {
+  width: 40%;
+  background-color: brown;
+  transition: 0.5s;
+}
+
+.chven {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.536);
+}
+
+.vin {
+  color: orange;
+}
+
+.kitx {
+  color: rgb(0, 0, 0);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+  }
+  
+  /* ბურგერი ღილაკი თავდაპირველად დამალული კომპიუტერის ზომაზე */
+  .burger {
+      display: none;
+  }
+  
+  /* მობილურის სტილები */
+  @media screen and (max-width: 768px) {
+
+    
+
+
+      .nav-links {
+          display: none; /* მენიუ თავიდან დამალული */
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background-color: #280b6c;
+      }
+  
+      /* ბურგერ ღილაკის გამოჩენა მობილურის ზომაზე */
+      .burger {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          gap: 5px;
+          z-index: 1000;
+      }
+  
+      /* ხაზები ბურგერ ღილაკისთვის */
+      .burger div {
+          width: 25px;
+          height: 3px;
+          background-color: rgb(81, 34, 34);
+      }
+  
+
+      
+     
+  }
+  
+  .logo {
+    visibility: hidden;
+  }
+    
+  
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #280b6c;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+  
+    .nav-links li {
+        margin: 15px 0;
+    }
+  
+    .burger {
+        display: flex;
+    }
+  
+    .nav-links.active {
+        display: flex;
+    }
+  
+    
+}
+
+
+.article {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+/* მობილურისთვის */
+@media screen and (max-width: 768px) {
+  .article {
+      flex-direction: column; /* სურათი ზემოთ, ტექსტი ქვემოთ */
+      text-align: center;
+  }
+
+  .article-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+/* Full article initially hidden */
+.full-article {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* When showing the full article */
+.article-content {
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* ფოტო */
+.article-image {
+  width: 100%;  /* ფოტოს სიგანე გადადიოდეს მშობელ ელემენტთან */
+  height: auto; /* სიმაღლე ავტომატურად მორგება სიგანეს */
+  max-width: 200px; /* მაქსიმალური სიგანე 400px */
+  margin-bottom: 15px; /* ვარიაცია თუ გსურთ სივრცე */
+}
+
+/* პარამეტრები, რომლებიც მუშაობს ფოტოებს */
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* მარჯვენა და მარცხნიდან სვეტი */
+.article-content {
+  flex: 1 1 50%; /* 50% სიგანე გაყვება 2 სვეტად */
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* როცა ტექსტი და ფოტო გადაინაცვლებს */
+@media (max-width: 768px) {
+  .article-content {
+    flex: 1 1 100%; /* 100%-ზე გადავა ვერტიკალურად */
+    text-align: center; /* ტექსტი იქნება ცენტრში */
+  }
+  .article-image {
+    max-width: 100%; /* ფოტო გაიყვანება ამ სიგანეზე */
+  }
+}
+
+/* მობილურის ვერსია */
+@media screen and (max-width: 768px) {
+  .article {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .article-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  .article-content {
+      width: 100%;
+  }
+
+  .read-more-btn {
+      width: 100%;
+  }
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* ჰორიზონტალური ცენტრირება */
+}
+
+
+.question-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  color: rgb(66, 65, 65);
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  padding: 5px;
+  pointer-events: none;
+}
+
+
+
+
+
+
+.blog-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #333;
+}
+.meta {
+  color: #777;
+  font-size: 14px;
+}
+.content {
+  margin-top: 20px;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  background: #f9f9f9;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  from {
+      transform: translateY(-10px);
+      opacity: 1;
+  }
+  to {
+      transform: translateY(100vh);
+      opacity: 0;
+  }
+}
+
+.balloon {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.balloon:nth-child(1) { background-color: #ff4081; }
+.balloon:nth-child(2) { background-color: #ff9800; }
+.balloon:nth-child(3) { background-color: #3f51b5; }
+.balloon:nth-child(4) { background-color: #4caf50; }
+.balloon:nth-child(5) { background-color: #009688; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-150px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(-10deg); }
+}
+
+.cake {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1.5s ease-in-out;
+}
+
+#anniversaryText {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #d81b60;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #d81b60;
+  display: none;
+  z-index: 10;
+  transition: opacity 2s ease;
+}
+
+@media (max-width: 600px) {
+  .cake1 {
+      width: 90%;
+      height: 80%;
+  }
+  #anniversaryText {
+      font-size: 1.5rem;
+      padding: 15px 25px;
+  }
+}
+
+
+.container {
+  z-index: 10000;
+}
+
+.gati {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.gati .myAudio:hover {
+  
+}
