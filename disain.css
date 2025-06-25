@@ -522,7 +522,7 @@ footer ul li a:hover::before {
 
   .nav-links {
     position: absolute;
-    top: 59px;
+    top: 70px;
     right: 0;
     background: #00695C;
     flex-direction: column;
